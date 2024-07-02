@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char m=sc.next().charAt(0);
+        if(m>=65 && m<=90)
+{
+    System.out.printf("Upper\n");
+}
+if(m>=97 && m<=122) 
+{
+    System.out.printf("Lower\n");
+}
+if(m>=48 && m<=57) 
+{
+    System.out.printf("Number\n");
+}
+if(!((m>=65 && m<=90) || (m>=97 && m<=122)||(m>=48 && m<=57))) 
+{
+    System.out.printf("Symbol");
+}
+}
+}
